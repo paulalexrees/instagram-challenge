@@ -1,0 +1,9 @@
+- if @pictures.any?
+  %ul
+  - @pictures.each do |pic|
+    %li
+      =pic.description
+- else
+  %h1 No pictures yet
+
+%a(href="/pictures/new") Upload a picture
